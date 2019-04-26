@@ -10,7 +10,6 @@ export const createComment = commentData => {
         const token = getState().users.user.token;
         commentData.user = getState().users.user._id;
         commentData.post = getState().posts.post._id;
-        console.log(commentData)
         const config = {headers: {'Authorization': token}}
         return axios.post('/comments', commentData, config).then(
             () => dispatch(createCommentSuccess())

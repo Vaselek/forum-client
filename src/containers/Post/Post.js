@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import PostThumbnail from "../../components/PostThumbnail/PostThumbnail";
-import {Link} from "react-router-dom";
-import {Card, CardBody} from "reactstrap";
 import {fetchComments, fetchPost} from "../../store/actions/postsActions";
 import {connect} from "react-redux";
 import NewComment from "../NewComment/NewComment";

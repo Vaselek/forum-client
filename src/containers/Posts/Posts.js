@@ -1,8 +1,6 @@
 import React, {Component, Fragment} from 'react';
-import {Button} from "reactstrap";
 import {fetchPosts} from "../../store/actions/postsActions";
 import {connect} from "react-redux";
-import {Link} from "react-router-dom";
 import PostListItem from "../../components/PostListItem/PostListItem";
 
 class Posts extends Component {

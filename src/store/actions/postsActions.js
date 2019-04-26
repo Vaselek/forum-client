@@ -37,7 +37,6 @@ export const fetchComments = (postId) => {
 export const createPost = postData => {
     return (dispatch, getState) => {
         const token = getState().users.user.token;
-        console.log(token)
         postData.append('user', getState().users.user._id);
         const config = {headers: {'Authorization': token}}
         return axios.post('/posts', postData, config).then(
